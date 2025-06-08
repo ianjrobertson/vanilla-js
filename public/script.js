@@ -1,4 +1,4 @@
-const socket = io("wss://video.ianjrobertson.click");
+const socket = io("https://video.ianjrobertson.click");
 let localStream;
 let peerConnection;
 let remoteSocketId;

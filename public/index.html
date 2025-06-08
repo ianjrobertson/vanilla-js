@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Video Chat</title>
+</head>
+<body>
+  <form id="roomForm">
+    <input type="text" id="roomInput" placeholder="Enter room code" required>
+    <button type="submit">Join</button>
+  </form>
+
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

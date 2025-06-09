@@ -224,10 +224,10 @@
                     
                     // Connect to signaling server
                     // Replace with your actual server URL when deployed
-                    const serverUrl = window.location.protocol === 'file:' 
-                        ? 'https://video.ianjrobertson.click' 
-                        : window.location.origin;
-                    this.socket = io(serverUrl);
+                    // const serverUrl = window.location.protocol === 'file:' 
+                    //     ? 'https://video.ianjrobertson.click' 
+                    //     : window.location.origin;
+                    this.socket = io('https://video.ianjrobertson.click');
                     
                     // Setup socket event listeners
                     this.setupSocketListeners();
